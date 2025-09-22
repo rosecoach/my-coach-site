@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>바이블우먼 — 크리스천 코칭</title>
+<meta name="description" content="서울 기반 크리스천 코칭. 신앙과 삶의 균형을 찾는 1:1 · 그룹 프로그램. 무료 30분 상담 신청" />
+<style>
+:root{
+  --bg:#FCFBF7;
+  --nav:#1E3A8A;
+  --accent:#C58E2E;
+  --card:#FFFFFF;
+  --text:#222;
+  --muted:#666;
+  --radius:12px;
+  font-family: "Noto Sans KR", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.6}
+header{background:linear-gradient(90deg, rgba(30,58,138,0.95), rgba(39,70,130,0.95)); color:white;padding:28px 18px}
+.container{max-width:1100px;margin:0 auto;padding:18px}
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-weight:700;font-size:20px}
+.navlinks a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:14px;font-weight:500}
+.hero{display:flex;gap:24px;align-items:center;padding:36px 0;flex-wrap:wrap}
+.hero .left{flex:1;min-width:280px}
+.hero h1{margin:0 0 10px;font-size:28px}
+.hero p{margin:0 0 18px;color:rgba(255,255,255,0.9)}
+.cta{display:flex;gap:12px}
+.btn{padding:12px 18px;border-radius:8px;background:var(--accent);color:white;font-weight:600;border:none;cursor:pointer}
+.btn.ghost{background:transparent;color:white;border:1px solid rgba(255,255,255,0.18)}
+.card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(20,20,30,0.06)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.service h3{margin-top:0}
+footer{padding:24px 0;color:var(--muted);font-size:14px;margin-top:36px;border-top:1px solid rgba(0,0,0,0.04)}
+/* Responsive */
+@media (max-width:900px){
+  .services{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  header{padding:18px}
+  .hero{flex-direction:column;align-items:flex-start}
+  .services{grid-template-columns:1fr}
+  .brand{font-size:18px}
+}
+/* simple form */
+form{display:grid;gap:8px}
+input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6e6e6}
+/* 코치 소개 페이지 */
+.coach-profile{display:flex;flex-wrap:wrap;gap:24px;margin-top:18px;align-items:center}
+.coach-profile img{border-radius:12px;max-width:200px;flex-shrink:0}
+.coach-info{flex:1;min-width:250px}
+.section-title{margin-bottom:16px;font-size:24px;color:var(--nav)}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">바이블우먼</div>
+      <div class="navlinks">
+        <a href="#about">소개</a>
+        <a href="#services">서비스</a>
+        <a href="#pricing">가격</a>
+        <a href="#contact">문의</a>
+        <a href="#podcast">팟캐스트</a>
+        <a href="#coach">코치 소개</a>
+      </div>
+    </nav>
+
+
+
+
+    <div class="hero">
+      <div class="left">
+        <h1>삶의 길목에서 하나님과 함께 다시 길을 찾다</h1>
+        <p>신앙을 자원으로 삼아 소명·관계·일상에서 균형을 회복하도록 돕습니다. 무료 30분 상담으로 지금 시작하세요.</p>
+        <div class="cta">
+          <button class="btn" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">무료 상담 신청</button>
+          <a class="btn ghost" href="#services">프로그램 보기</a>
+        </div>
+      </div>
+      <div style="flex:0.9;min-width:260px;">
+        <div class="card">
+          <h3>빠른 정보</h3>
+          <img src="https://picsum.photos/280/150" alt="상담 이미지" style="width:100%;border-radius:8px;margin-bottom:12px;">
+          <p style="margin:6px 0"><strong>형식:</strong> 온라인/대면</p>
+          <p style="margin:6px 0"><strong>대상:</strong> 성인, 교회 소그룹, 리더십 팀</p>
+          <p style="margin:6px 0"><strong>첫 상담:</strong> 무료 30분</p>
+          <p style="margin:6px 0"><small>※ 필요 시 심리치료 전문기관 연계</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container" style="padding-top:22px">
+  <!-- 서비스 섹션 -->
+  <section id="services">
+    <h2>서비스</h2>
+    <div class="services">
+      <div class="card service">
+        <h3>1:1 코칭</h3>
+        <p>신앙 중심의 개인 맞춤 코칭. 소명·전환·관계 회복을 지원합니다.</p>
+      </div>
+      <div class="card service">
+        <h3>그룹 코칭</h3>
+        <p>교회 소그룹, 리더십 팀 단위로 진행되는 성경 기반 워크숍.</p>
+      </div>
+      <div class="card service">
+        <h3>리트릿 & 워크숍</h3>
+        <p>주말 집중형 리트릿으로 깊은 영적 성찰과 실천 플랜을 제공합니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 가격 섹션 -->
+  <section id="pricing" style="margin-top:24px">
+    <h2>패키지 & 가격</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+      <div class="card">
+        <h3>무료 상담</h3>
+        <p>첫 상담 30분 — 무료</p>
+      </div>
+      <div class="card">
+        <h3>스타터(6주)</h3>
+        <p>60분 × 6회 — 450,000원</p>
+      </div>
+      <div class="card">
+        <h3>심화(12주)</h3>
+        <p>60분 × 12회 — 840,000원</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 팟캐스트 섹션 -->
+  <section id="podcast" style="margin-top:40px;">
+    <h2 class="section-title">바이블우먼 팟캐스트</h2>
+    <div class="card" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+      <img src="https://picsum.photos/120/120?podcast" alt="팟캐스트 이미지" style="border-radius:12px;">
+      <div style="flex:1; min-width:200px;">
+        <p>영적 성장과 여성 크리스천 이야기, 묵상, Q&A까지!  
+        매주 새로운 에피소드가 올라옵니다.</p>
+        <a class="btn" href="https://open.spotify.com/" target="_blank">Spotify에서 듣기</a>
+        <a class="btn ghost" href="https://podcasts.apple.com/" target="_blank">Apple Podcasts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 코치 소개 섹션 -->
+  <section id="coach" style="margin-top:40px;">
+    <h2 class="section-title">코치 소개</h2>
+    <div class="coach-profile">
+      <img src="https://postfiles.pstatic.net/MjAyNTA5MjFfMTUz/MDAxNzU4NDQ5MjAzNDU4.tkStLPhS4oa3dK5RWol8rOgjdUiaG06t3S104s90qsMg.JDmKKGy_ElDP19vKA5aYKocNvvbc4cCKMJp1MC9OThQg.JPEG/IMG%EF%BC%BF8640.JPG?type=w966" alt="코치 프로필">
+      <div class="coach-info">
+        <h3>로즈 코치</h3>
+        <p>Christian Life Coach 공식인증 코치, MBCT 전문가, 명상&심리상담 지도자격증 외  YTT 자격증, 크리스천 코칭 경험 다수.  
+     여성 크리스천이 말씀을 중심으로 삶과 사명을 발견하도록 돕습니다.</p>
+        <p>코칭 철학: "쉼과 회복, 그리고 다음 세대로 이어지는 신앙의 유산"</p>
+        <a class="btn" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">상담 신청하기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 상담 신청 섹션 -->
+  <section id="contact" style="margin-top:28px">
+    <h2>상담 신청 / 문의</h2>
+    <div class="card" id="contact-form">
+      <form onsubmit="return submitForm(event)">
+        <label>이름<input type="text" id="name" required /></label>
+        <label>이메일<input type="email" id="email" required /></label>
+        <label>핸드폰<input type="tel" id="phone" /></label>
+        <label>상담 주제(짧게)<textarea id="topic" rows="3"></textarea></label>
+        <label>원하시는 상담 방식
+          <select id="mode">
+            <option>온라인(Zoom)</option>
+            <option>대면</option>
+          </select>
+        </label>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <button class="btn" type="submit">상담 신청</button>
+          <a class="btn ghost" href="mailto:your@email.com">이메일로 문의</a>
+        </div>
+      </form>
+      <p style="margin-top:8px;color:var(--muted)">※ 개인정보는 상담 목적 외 사용하지 않습니다.</p>
+    </div>
+
+
+    <!-- 홈 버튼: 카드 밖, 별도 div로 배치 -->
+    <div style="margin-top:16px; text-align:center;">
+      <a class="btn" href="123.html#querencia">🏠 홈으로 돌아가기</a>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <p>© 2025 바이블우먼 · 크리스천 코칭 • 개인정보처리방침</p>
+    </div>
+  </footer>
+</main>
+
+<script>
+function submitForm(e){
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const topic = document.getElementById('topic').value.trim();
+  if(!name||!email){ alert('이름과 이메일을 입력해주세요.'); return false; }
+  alert(name + '님, 신청이 접수되었습니다. 이메일로 확인 메시지를 보내드릴게요.');
+  return false;
+}
+</script>
+</body>
+</html>
