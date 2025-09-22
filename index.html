@@ -1,0 +1,230 @@
+<html lang="ko"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>바이블우먼 — 케렌시아 &amp; 헤렌시아</title>
+<style>
+:root {
+  --bg:#FCFBF7;
+  --nav:#1E3A8A;
+  --accent:#C58E2E;
+  --card:#FFFFFF;
+  --text:#222;
+  --muted:#666;
+  --radius:12px;
+  --hero-gap:24px;
+  font-family: "Noto Sans KR", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.6;}
+
+.container{max-width:1100px;margin:0 auto;padding:18px;}
+
+header{background:linear-gradient(90deg, rgba(30,58,138,0.95), rgba(39,70,130,0.95)); color:white; padding:28px 18px;}
+
+nav{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.brand{font-weight:700;font-size:20px;}
+.navlinks a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:14px;font-weight:500;}
+
+.hero{display:flex;gap:var(--hero-gap);align-items:center;flex-wrap:wrap;justify-content:center; padding:36px 0;}
+.hero .left{flex:1;min-width:280px;}
+.hero h1{margin:0 0 10px;font-size:28px;}
+.hero p{margin:0 0 18px;color:rgba(255,255,255,0.9);}
+.cta{display:flex;gap:12px;}
+.btn{padding:12px 18px;border-radius:8px;background:var(--accent);color:white;font-weight:600;border:none;cursor:pointer;}
+.btn.ghost{background:transparent;color:white;border:1px solid rgba(255,255,255,0.18);}
+
+.card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(20,20,30,0.06);}
+.card img{width:100%;border-radius:8px;margin-bottom:12px;object-fit:cover;}
+
+/* Services & Sections */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px;}
+.section-title{margin-bottom:12px; font-size:24px; font-weight:600;}
+
+/* Footer */
+footer{padding:24px 0;color:var(--muted);font-size:14px;margin-top:36px;border-top:1px solid rgba(0,0,0,0.04);}
+
+/* Form */
+form{display:grid;gap:8px;}
+input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6e6e6;}
+
+/* Responsive */
+@media (max-width:900px){.services{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:640px){
+  header{padding:18px;}
+  .hero{flex-direction:column;align-items:center;}
+  .services{grid-template-columns:1fr;}
+  .brand{font-size:18px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">바이블우먼</div>
+      <div class="navlinks">
+        <a href="#querencia">Faith Haven</a>
+        <a href="#herencia">Legacy of Grace</a>
+        <a href="#services">서비스</a>
+        <a href="#contact">문의</a>
+        <a href="#podcast">팟캐스트</a> <!-- 추가 -->
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="left">
+        <h1>쉼과 회복, 그리고 믿음의 유산</h1>
+        <p>바이블우먼 온라인 공간은 지친 여성들이 하나님과 함께 마음을 회복하고, 신앙의 유산을 이어가는 플랫폼입니다.</p>
+        <div class="cta">
+          <button class="btn" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">무료 상담 신청</button>
+          <a class="btn ghost" href="#services">프로그램 보기</a>
+        </div>
+      </div>
+      <div style="flex:0.9;min-width:260px;">
+        <div class="card">
+          <h3>빠른 정보</h3>
+          <img src="https://picsum.photos/280/180" alt="상담 이미지">
+          <p><strong>형식:</strong> 온라인/대면</p>
+          <p><strong>대상:</strong> 성인, 교회 소그룹, 리더십 팀</p>
+          <p><strong>첫 상담:</strong> 무료 30분</p>
+          <p><small>※ 필요 시 심리치료 전문기관 연계</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- 케렌시아 Zone -->
+  <section id="querencia" style="margin-top:28px;">
+    <h2 class="section-title">Faith Haven — 쉼과 회복</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://picsum.photos/280/150?2" alt="묵상 이미지">
+        <h3>오늘의 말씀</h3>
+        <p>하루 말씀과 짧은 큐티를 제공합니다.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/280/150?3" alt="기도 이미지">
+        <h3>기도 요청</h3>
+        <p>익명으로 기도 요청 및 나눔이 가능합니다.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/280/150?4" alt="힐링 영상">
+        <h3>힐링 콘텐츠</h3>
+        <p>영상과 음악으로 마음을 회복하세요.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- 팟캐스트 배너 섹션 -->
+<section id="podcast" style="margin-top:40px;">
+  <h2 class="section-title">바이블우먼 팟캐스트</h2>
+  <div class="card" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+    <img src="https://postfiles.pstatic.net/MjAyNTA5MjFfMTIg/MDAxNzU4NDUxNjA5NTgx.tp5ZpRSzIWP2QZGNrEp6lUOkRdx_tDCLoBtf9IdyFUEg.CF8rkI-7ZYxgKUZXJTm9JXJm82r-wEsEWA3Ro4b-OIgg.JPEG/Brown_and_Cream_Minimalist_Blogger_Youtube_Channel_Art.jpg.jpg?type=w966" alt="팟캐스트 이미지" style="border-radius:12px;">
+    <div style="flex:1; min-width:200px;">
+      <p>영적 성장과 여성 크리스천 이야기, 묵상, Q&amp;A까지!  
+      매주 새로운 에피소드가 올라옵니다.</p>
+      <a class="btn" href="https://open.spotify.com/" target="_blank">Spotify에서 듣기</a>
+      <a class="btn ghost" href="https://podcasts.apple.com/" target="_blank">Apple Podcasts</a>
+    </div>
+  </div>
+</section>
+
+  <!-- 헤렌시아 Zone -->
+  <section id="herencia" style="margin-top:28px;">
+    <h2 class="section-title">Legacy of Grace — 믿음의 유산</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://picsum.photos/280/150?5" alt="강의 이미지">
+        <h3>신앙 강의</h3>
+        <p>여성 성경 인물 연구 및 신앙 강의 아카이브</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/280/150?6" alt="멘토링 이미지">
+        <h3>멘토-멘티</h3>
+        <p>영적 멘토와 연결되어 성장할 수 있습니다.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/280/150?7" alt="간증 이미지">
+        <h3>간증 &amp; 기록</h3>
+        <p>간증, 사역 일지, 여성 크리스천 역사 기록</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 서비스 & 신청 -->
+  <section id="services" style="margin-top:28px;">
+    <h2 class="section-title">프로그램 &amp; 가격</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
+      <div class="card">
+        <h3>무료 상담</h3>
+        <p>첫 상담 30분 — 무료</p>
+      </div>
+      <div class="card">
+        <h3>스타터(6주)</h3>
+        <p>60분 × 6회 — 450,000원</p>
+      </div>
+      <div class="card">
+        <h3>심화(12주)</h3>
+        <p>60분 × 12회 — 840,000원</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- 문의 -->
+  <section id="contact" style="margin-top:28px;">
+    <h2 class="section-title">상담 신청 / 문의</h2>
+    <div class="card" id="contact-form">
+      <form onsubmit="return submitForm(event)">
+        <label>이름<input type="text" id="name" required=""></label>
+        <label>이메일<input type="email" id="email" required=""></label>
+        <label>핸드폰<input type="tel" id="phone"></label>
+        <label>상담 주제(짧게)<textarea id="topic" rows="3"></textarea></label>
+        <label>원하시는 상담 방식
+          <select id="mode">
+            <option>온라인(Zoom)</option>
+            <option>대면</option>
+          </select>
+        </label>
+        <div style="display:flex;gap:8px;margin-top:8px;">
+          <button class="btn" type="submit">상담 신청</button>
+          <a class="btn ghost" href="mailto:your@email.com">이메일로 문의</a>
+        </div>
+      </form>
+      <p style="margin-top:8px;color:var(--muted)">※ 개인정보는 상담 목적 외 사용하지 않습니다.</p>
+    </div>
+  </section>
+
+</main>
+
+ <!-- 홈 버튼: 카드 밖, 별도 div로 배치 -->
+    <div style="margin-top:16px; text-align:center;">
+      <a class="btn" href="rose.html#querencia"> 코치 소개로 이동</a>
+    </div>
+  </section>
+
+<footer>
+  <div class="container">
+    <p>© 2025 바이블우먼 · 크리스천 코칭 • 개인정보처리방침</p>
+  </div>
+</footer>
+
+<script>
+function submitForm(e){
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  if(!name||!email){ alert('이름과 이메일을 입력해주세요.'); return false; }
+  alert(name + '님, 신청이 접수되었습니다. 이메일로 확인 메시지를 보내드릴게요.');
+  return false;
+}
+</script>
+
+
+
+</body></html>
