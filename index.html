@@ -184,10 +184,10 @@ input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6e6e6;}
      <!-- 이메일연동 
       <form onsubmit="return submitForm(event)">
       -->
-        <label>이름<input type="text" id="name" required=""></label>
-        <label>이메일<input type="email" id="email" required=""></label>
-        <label>핸드폰<input type="tel" id="phone"></label>
-        <label>기타 상담 주제(짧게)<textarea id="topic" rows="3"></textarea></label>
+            <label>이름<input type="text" id="name" placeholder="이름 입력" /></label>
+    <label>이메일<input type="email" id="email" placeholder="이메일 입력" /></label>
+    <label>핸드폰<input type="tel" id="phone" placeholder="연락처 입력" /></label>
+    <label>기타 상담 주제(짧게)<textarea id="topic" rows="3" placeholder="간단히 작성해주세요"></textarea></label>
       <!-- 
         <label>원하시는 상담 방식
           <select id="mode">
@@ -234,6 +234,7 @@ function submitForm(e){
 
 
 </body></html>
+
 
 
 
