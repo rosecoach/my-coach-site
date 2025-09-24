@@ -180,14 +180,19 @@ input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6e6e6;}
   <!-- 문의 -->
   <section id="contact" style="margin-top:28px;">
     <h2 class="section-title">부트캠프 신청 / 문의</h2>
-    <div class="card" id="contact-form">
+    <div class="card" id="contact-form" 
+      style="display:flex-direction:coium; gap:12px;">
      <!-- 이메일연동 
       <form onsubmit="return submitForm(event)">
       -->
-            <label>이름<input type="text" id="name" placeholder="이름 입력" /></label>
-    <label>이메일<input type="email" id="email" placeholder="이메일 입력" /></label>
-    <label>핸드폰<input type="tel" id="phone" placeholder="연락처 입력" /></label>
-    <label>기타 상담 주제(짧게)<textarea id="topic" rows="3" placeholder="간단히 작성해주세요"></textarea></label>
+      <lable style="display:flex; flex-direction:coium;">
+        이름<input type="text" id="name" placeholder="이름 입력" /></label>
+    <lable style="display:flex; flex-direction:coium;">
+      이메일<input type="email" id="email" placeholder="이메일 입력" /></label>
+   <lable style="display:flex; flex-direction:coium;">
+     핸드폰<input type="tel" id="phone" placeholder="연락처 입력" /></label>
+    <lable style="display:flex; flex-direction:coium;">
+      기타 상담 주제(짧게)<textarea id="topic" rows="3" placeholder="간단히 작성해주세요"></textarea></label>
       <!-- 
         <label>원하시는 상담 방식
           <select id="mode">
@@ -197,10 +202,9 @@ input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6e6e6;}
         </label>
       -->
         <div style="display:flex;gap:8px;margin-top:8px;">
-          <button class="btn" type="submit">캠프 신청</button>
           <a class="btn ghost" href="https://forms.gle/29hsffbRkPZovwgFA" target="_blank">구글폼 문의</a>
         </div>
-      </form>
+    
       <p style="margin-top:8px;color:var(--muted)">※ 개인정보는 상담 목적 외 사용하지 않습니다.</p>
     </div>
   </section>
@@ -234,6 +238,7 @@ function submitForm(e){
 
 
 </body></html>
+
 
 
 
